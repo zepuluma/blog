@@ -1,0 +1,8 @@
+<h1>New Article</h1>
+
+<%# ich könnte das u.g. eig. weglassen und ein vanilla form selbst erstellen %>
+
+<%# das partial _form wird ohne underscore aufgerufen %>
+<%# mit dem zweiten param wird der variable article im partial nun die variable @article der instanz new zugewiesen %>
+<%= render "form", article: @article %>
+Copy

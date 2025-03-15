@@ -1,0 +1,13 @@
+<h1>Huhu Rails hier bin ich</h1>
+<p>Find me in app/views/articles/index.html.erb</p>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+      <%= link_to article.title, article %>
+      <%= link_to "Edit Article", edit_article_path(article.id) %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "New Article", new_article_path %>
